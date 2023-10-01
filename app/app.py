@@ -46,6 +46,8 @@ def pong():
             return "Ponged back from " + request.host + " at: " + rn, 200
     else:
         return "Content type is not supported.", 400
-    
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0', port=8000)
 
     
